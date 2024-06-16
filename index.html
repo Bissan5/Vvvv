@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع عيد الأضحى</title>
+    <style>
+        body {
+            background-color: #87CEEB; /* اللون الزرقاء السماوية */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .question {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .option {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="question">
+        <p>كم عدد أيام عيد الأضحى؟</p>
+        <div class="options">
+            <div class="option" onclick="checkAnswer('wrong')">يوم واحد</div>
+            <div class="option" onclick="checkAnswer('correct')">أربعة أيام</div>
+            <div class="option" onclick="checkAnswer('wrong')">ثلاثة أيام</div>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'correct') {
+                alert('نعم، صحيح!');
+            } else {
+                alert('خطأ!');
+            }
+        }
+    </script>
+</body>
+</html>
